@@ -1,0 +1,9 @@
+body{
+    scroll-behavior: smooth;
+    overflow-x: none;
+}
+
+#myCarousel{
+    position: relative;
+}
+
