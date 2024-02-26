@@ -14,7 +14,7 @@
   <body>
     
     <header class="container-fluid d-flex justify-content-between align-items-center mb-4">
-      <div>
+      <div class="rotate-hor-center">
         <h1><a href=""><img src="fitimg/fitWorldLogo.png.png" width="150px" height="150px" alt=""></a></h1>
       </div>
       <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -24,13 +24,19 @@
     </button>
     </header>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div style="background-color: rgba(36, 34, 34, 0.764);" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    ...
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">SIGN UP!</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Get In Touch</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
 

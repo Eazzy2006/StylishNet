@@ -4,7 +4,7 @@ body {
 }
 
 #myCarousel {
-    margin-top: -180px; /* Remove negative margin */
+    margin-top: -190px; /* Remove negative margin */
     z-index: 0; /* Set z-index to 0 */
 }
 
@@ -82,3 +82,46 @@ header {
     border: none;
     background: transparent;
   }
+
+  .nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  
+  .nav ul {
+    list-style: none;
+    
+    li {
+      position: relative;
+      margin: 3.2em 0;
+      
+      a{
+        line-height: 5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.4em;
+        color: white;
+        display: block;
+        transition: all ease-out 300ms;
+      }   
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #5e42a6, #b74e91)
+      }
+    }
+  }
+
+  .rotate-hor-center{-webkit-animation:rotate-hor-center .5s cubic-bezier(.455,.03,.515,.955) both;animation:rotate-hor-center .5s cubic-bezier(.455,.03,.515,.955) both}
+
+@-webkit-keyframes rotate-hor-center{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-360deg);transform:rotateX(-360deg)}}@keyframes rotate-hor-center{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-360deg);transform:rotateX(-360deg)}}
