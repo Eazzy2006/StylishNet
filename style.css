@@ -1,6 +1,6 @@
 body {
   scroll-behavior: smooth;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 #myCarousel {
@@ -153,40 +153,6 @@ button {
   background-clip: text;
 }
 
-.firstOfFirst{
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    display: none;
-} 
-
-#titleOfFirst{
-  font-size: 80px;
-  text-align: justify;
-  margin-left: 200px;
-}
-
-h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
-
-#teksti {
-  font-size: 8vw;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 0.5  ;
-}
-
-.fancy {
-  @supports (background-clip: text) or (-webkit-background-clip: text) {
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
-    background-size: 110% auto;
-    background-position: center;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
-
 .scale-up-center{-webkit-animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) infinite both;animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) infinite both}
  
 
@@ -194,11 +160,11 @@ h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-we
  @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
 
  .marqueee { 
-  position: relative;
   height: clamp(3em, 10vw, 6em);
-  overflow: hidden;         
-  width: 100%;
   background: linear-gradient(to right, #5e42a6, #b74e91);  
+  width: 100vw;
+  left: -80px;
+  position: relative;
 }
 
 .marquee-text {
@@ -209,8 +175,7 @@ h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-we
   padding-bottom: 12px;
   text-transform: uppercase;  
   color: white;
-  width: 100%;
-  font-weight: 700;
+  font-weight: 700; 
   opacity: 0; 
 }
 
@@ -234,6 +199,53 @@ h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-we
   animation: marquee 17s infinite linear 8s; /* Adjusted delay for smooth transition */
 }
 
+.epara{
+    padding: 50px;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#eparah1{
+  font-size: 3em;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+}
+
+#peparah{
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  font-size: 17px;
+  position: relative;
+  text-align: justify;
+  left: 600px;
+  top: 200px;
+  background-clip: text;
+}
+
+.fotot{
+  border-radius: 20px;
+}
+
+#fotoja1{
+  width: 450px;
+  height: 500px;
+  position: relative;
+  margin-top: -70px;
+  margin-left: -10px;
+}
+
+#fotoja2{
+  width: 450px;
+  height: 500px;
+  position: relative;
+  top: -150px;
+  left: 430px;
+}
 
 @keyframes marquee {
   0% {
