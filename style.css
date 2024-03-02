@@ -261,3 +261,12 @@ button {
     opacity: 0; /* Fade out towards the end */
   }
 }
+
+.scroll-appear {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.scroll-appear.appear {
+  opacity: 1;
+}
