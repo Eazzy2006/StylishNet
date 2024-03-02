@@ -1,6 +1,7 @@
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: Gilroy, sans-serif;
 }
 
 #myCarousel {
@@ -161,7 +162,6 @@ button {
 
  .marqueee { 
   height: clamp(3em, 10vw, 6em);
-  background: linear-gradient(to right, #5e42a6, #b74e91);  
   width: 100vw;
   left: -80px;
   position: relative;
@@ -174,33 +174,39 @@ button {
   display: inline;
   padding-bottom: 12px;
   text-transform: uppercase;  
-  color: white;
-  font-weight: 700; 
+  font-size: 5em;
+  font-weight: 600;
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px rgb(140, 22, 140); /* Add a black outline around the text */
+  -webkit-text-fill-color: transparent; /* Hide the text fill */
+  color: transparent;
+  text-align: center;
+  background-clip: text;
   opacity: 0; 
 }
 
 .marquee-text:nth-child(1) {
-  animation: marquee 17s infinite linear 0s;
+  animation: marquee 15s infinite linear 0s;
 }
 
 .marquee-text:nth-child(2) {
-  animation: marquee 17s infinite linear 2s; /* Adjusted delay for smooth transition */
+  animation: marquee 15s infinite linear 2s; /* Adjusted delay for smooth transition */
 }
 
 .marquee-text:nth-child(3) {
-  animation: marquee 17s infinite linear 4s; /* Adjusted delay for smooth transition */
+  animation: marquee 15s infinite linear 4s; /* Adjusted delay for smooth transition */
 }
 
 .marquee-text:nth-child(4) {
-  animation: marquee 17s infinite linear 6s; /* Adjusted delay for smooth transition */
+  animation: marquee 15s infinite linear 6s; /* Adjusted delay for smooth transition */
 }
 
 .marquee-text:nth-child(5) {
-  animation: marquee 17s infinite linear 8s; /* Adjusted delay for smooth transition */
+  animation: marquee 15s infinite linear 8s; /* Adjusted delay for smooth transition */
 }
 
 .epara{
-    padding: 50px;
+    padding: 50px; 
     max-width: 800px;
     margin-top: 50px;
     margin-left: 30px;
@@ -229,19 +235,22 @@ button {
 
 .fotot{
   border-radius: 20px;
-}
-
-#fotoja1{
   width: 450px;
   height: 500px;
+  transition: 0.3s ease-in-out;
+}
+.fotot:hover{
+  border-radius: 40px;
+  width: 470px;
+  height: 520px;
+}
+#fotoja1{
   position: relative;
   margin-top: -70px;
   margin-left: -10px;
 }
 
 #fotoja2{
-  width: 450px;
-  height: 500px;
   position: relative;
   top: -150px;
   left: 430px;
@@ -269,4 +278,13 @@ button {
 
 .scroll-appear.appear {
   opacity: 1;
+}
+
+#edytah1{
+  font-size: 4em;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #5f5b6a, #7806e9);
+  color: transparent;
+  text-align: center;
+  background-clip: text;
 }

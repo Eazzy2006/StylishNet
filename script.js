@@ -17,4 +17,3 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 }, appearOptions);
 
 appearOnScroll.observe(scrollAppear);
-
