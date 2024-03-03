@@ -143,6 +143,7 @@ button {
   width: 100%;
   background-image:linear-gradient(rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/f1/f9/00/f1f9007aca281d57c00c6a3d097b13d2.gif");
+  
   opacity: 0.8;
   padding: 40px;
 }
@@ -336,4 +337,114 @@ button {
   left: 30px;
   top: 200px;
   background-clip: text;
+}
+
+#etretah1{
+  font-family: sans-serif; /* Change to inline-block for rotation */
+  display: inline-block;
+  text-transform: uppercase;  
+  font-size: 6em;
+  font-weight: 600;
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px rgb(140, 22, 140); /* Add a black outline around the text */
+  -webkit-text-fill-color: transparent; /* Hide the text fill */
+  position: relative;
+  top: 300px;
+  transform: rotate(-90deg); /* Set the rotation origin */
+  background-clip: text;
+}
+
+.etreta{
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+#ptreta{
+  position: relative;
+  width: 350px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  left: 430px;
+  top: 0px;
+  font-size: 20px;
+  background-clip: text;
+}
+
+#clickhere{
+  color: #952795;
+  width: 250px;
+  position: relative;
+  left: 420px;
+  top: 40px;
+}
+#clickhere:hover {
+  box-shadow: 0 5px 15px #952795;
+}
+
+#clickhere:hover:before {
+  border-color: #952795;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .3s height linear .3s;
+}
+
+#clickhere:hover:after {
+  border-color: #952795;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .3s height linear .5s;
+}
+
+.form {
+  align-self: center;
+}
+
+.form__input {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+
+  @media (min-width: 768px) {
+    width: clamp(120px, 35vw, 420px);
+  }
+
+  &:focus {
+    outline: none;
+    border-top-color: rgba(0,0,0,0.1);
+  }
+
+  &:focus + .form__label, &:not(:placeholder-shown) + .form__label {
+    transform: translateY(-4.50rem) scale(1);
+    color: black;
+  }
+
+  &::placeholder {
+    display: none;
+    color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  &:not(:placeholder-shown) {
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.form__label {
+  font-size: 1rem;
+  color: grey;
+  display: block;
+  transform: translate(1.25rem,-2.5rem);
+  transform-origin: 0 0;
+  transition: all 500ms;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none; 
 }

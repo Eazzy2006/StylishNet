@@ -33,8 +33,8 @@
       <ul>
         <li><a href="#">Homepage</a></li>
         <li><a href="#whatwedo">What We Do</a></li>
-        <li><a href="#">Happy Clients</a></li>
-        <li><a href="#">SIGN UP </a></li>
+        <li><a href="#klientat">Happy Clients</a></li>
+        <li><a href="#sajnap">SIGN UP </a></li>
       </ul>
     </nav>
   </div>
@@ -124,7 +124,7 @@
 
   <div class="edyta">
 
-
+    <a id="klientat"></a>
     <h1 id="edytah1">From Goals to Gains: Client Success Stories</h1>
   <br>
 
@@ -157,7 +157,7 @@
         Seeing individuals achieve their fitness goals and witnessing the positive impact it has on their lives is truly inspiring. 
         FitWorld is more than just a website to me; it's a platform that empowers people to transform their bodies and minds,
          ultimately leading to a healthier and happier lifestyle. <span style="font-size: 30px;">"</span> <br>
-        <span style="font-style: italic;">- Idriz Osmani</span>
+        <span style="font-style: italic;">- Idriz Osmani (creator)</span>
       </p>
       <img src="fitimg/idriz.png" class="clientspics" alt="">
       <h2 class="clientsh2">IDRIZ OSMANI</h2>
@@ -171,12 +171,99 @@
 
 <div class="firstContent" >
 
-  <div class="firstone" style="display: none;"> 
+  <div class="firstone"> 
     <p>"Always be ready to adjust, recalibrate, and stay after it to become better, somehow."<br> <span style="font-style: italic;"> - David Goggins</span></p>
   </div>
   </div>
+
+  <br>
+  <a id="sajnap"></a>
+  <div class="etreta">
+    <h1 id="etretah1">GET STARTED!</h1> 
+    <p id="ptreta">"Ready to kickstart your fitness journey? <br>
+      Let's get started by tailoring a personalized plan just for you. <br>
+      Simply provide us with your measurements and let us know your goals, <br>
+      and we'll guide you every step of the way towards achieving the healthier,<br> 
+      stronger version of yourself you've always dreamed of. <br>
+      Let's make your fitness goals a reality together!"</p>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <span id="clickhere" class="box">
+    CLICK HERE!
+</span>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Measurements & Goals</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="cta-form">
+          <h2>Fill out the form!</h2> 
+        <p>Give us the needed info for you to get going!</p>
+        </div>
+        <form action="" class="form">
+          
+          <input type="number" placeholder="Name" class="form__input" id="name" />
+          <label for="name" class="form__label">Weight in kg</label>
+    
+          <input type="number" placeholder="Email" class="form__input" id="email" />
+          <label for="email" class="form__label">Height in cm</label>
+    
+          <p>You want to get:</p>
+            <input type="radio" id="muscular" name="fav_language" value="Muscular">
+            <label for="muscular">Muscular</label><br>
+            <input type="radio" id="thinner" name="fav_language" value="Thinner">
+            <label for="thinner">Thinner</label><br>
+            <input type="radio" id="faster" name="fav_language" value="faster">
+            <label for="faster">Cardio Speed</label><br>
+          
+        </form>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Get personalized videos</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<section style="margin-top: 250px; padding-bottom:  150px;" class="marqueee">
+  <p class="marquee-text">ACHIEVE.</p>
+  <p class="marquee-text">CONTINUE.</p>
+  <p class="marquee-text">INSPIRE.</p>
+  <p class="marquee-text">EXCEL.</p>
+  <p class="marquee-text">TRIUMPH.</p>
+  <p class="marquee-text">CONQUER.</p>
+  <p class="marquee-text">THRIVE.</p>
+</section>  
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© Idriz Osmani <br> @idrizosmanii6@gmail.com</p>
+
+    <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="fitimg/fitWorldLogo.png.png" width="150px" height="150px" alt="">
+    </a>
+
+    <ul class="nav col-md-11 justify-content-end" style="margin-top: -100px;">
+      <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#whatwedo" class="nav-link px-2 text-body-secondary">What We Do</a></li>
+      <li class="nav-item"><a href="#klientat" class="nav-link px-2 text-body-secondary">Happy Clients</a></li>
+      <li class="nav-item"><a href="#sajnap" class="nav-link px-2 text-body-secondary">SIGN UP</a></li>
+    </ul>
+  </footer>
 </div>
+
+  </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
