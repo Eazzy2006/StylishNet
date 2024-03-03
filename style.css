@@ -205,6 +205,15 @@ button {
   animation: marquee 15s infinite linear 8s; /* Adjusted delay for smooth transition */
 }
 
+.marquee-text:nth-child(6) {
+  animation: marquee 15s infinite linear 10s; /* Adjusted delay for smooth transition */
+}
+
+.marquee-text:nth-child(7) {
+  animation: marquee 15s infinite linear 12s; /* Adjusted delay for smooth transition */
+}
+
+
 .epara{
     padding: 50px; 
     max-width: 800px;
@@ -283,8 +292,48 @@ button {
 #edytah1{
   font-size: 4em;
   font-weight: 600;
-  background-image: linear-gradient(to left, #5f5b6a, #7806e9);
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   text-align: center;
+  background-clip: text;
+}
+
+.clientspics{
+  width: 600px;
+  height: 700px;
+  position: relative;
+  left: 300px;
+  top: -250px;
+}
+
+.clients{
+  text-align: center;
+}
+
+.clientsh2 {
+  font-family: sans-serif; /* Change to inline-block for rotation */
+  display: inline-block;
+  text-transform: uppercase;  
+  font-size: 5em;
+  font-weight: 600;
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px rgb(140, 22, 140); /* Add a black outline around the text */
+  -webkit-text-fill-color: transparent; /* Hide the text fill */
+  transform: rotate(90deg); /* Rotate the text by 90 degrees */
+  position: relative;
+  left: 400px;
+  top: -450px;
+  transform-origin: left top; /* Set the rotation origin */
+  background-clip: text;
+}
+
+.clientsp{
+  position: relative;
+  width: 350px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  left: 30px;
+  top: 200px;
   background-clip: text;
 }
