@@ -18,3 +18,14 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 
 appearOnScroll.observe(scrollAppear);
 
+// logic starts here
+
+const weightInput = document.getElementById("weightKg")
+const heightInput = document.getElementById("heightCm")
+const muscularRadio = document.getElementById("muscular")
+const forma = document.getElementById("forma")
+
+function fshije() {
+forma.reset()
+}
+

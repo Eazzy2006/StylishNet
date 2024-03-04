@@ -207,13 +207,13 @@
           <h2>Fill out the form!</h2> 
         <p>Give us the needed info for you to get going!</p>
         </div>
-        <form action="" class="form">
+        <form action="" id="forma" class="form">
           
           <input type="number" placeholder="Name" class="form__input" id="name" />
-          <label for="name" class="form__label">Weight in kg</label>
+          <label for="name" id="weightKg" class="form__label">Weight in kg</label>
     
           <input type="number" placeholder="Email" class="form__input" id="email" />
-          <label for="email" class="form__label">Height in cm</label>
+          <label for="email" id="heightCm" class="form__label">Height in cm</label>
     
           <p>You want to get:</p>
             <input type="radio" id="muscular" name="fav_language" value="Muscular">
@@ -225,10 +225,11 @@
           
         </form>
       </div>
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Get personalized videos</button>
+        <button type="reset" class="btn btn-secondary" onclick="fshije()">Clear</button>
+        <a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp" onclick="getVideos" id="getBtn" target="_blank">Get personalized videos</a>
+      </div>
       </div>
     </div>
   </div>
