@@ -456,3 +456,185 @@ button {
   padding: 10px;
   border-radius: 10px;
 }
+
+@media screen and (min-width: 300px) and (max-width:767px) {
+    #myCarousel{
+      width: 1000px;
+    }
+
+    #phonebutton{
+      position: relative;
+      left: 600px;
+    }
+
+  #eparah1{
+    width: 900px;
+  }
+.navili{
+  font-size: 2em;
+}
+  #peparah{
+    margin-left: -120px;
+    font-size: 21px;
+  }
+
+  .edyta{
+    width: 100%;
+  }
+
+  #edytah1{
+    width: 800px;
+    margin-left: 120px;
+  }
+   
+  #clientCarousel{
+    width: 1000px;
+  }
+  .clientsp{
+    font-size: 18px;
+  }
+  .clientspics{
+    margin-left: -180px;
+  }
+  .clientsh2{
+    display: none;
+  }
+
+.firstone{
+  width: 1000px;
+}
+
+.etreta{
+  margin-left: 0px;
+}
+
+#etretah1{
+  font-size: 7em;
+}
+
+#ptreta{
+  font-size: 25px;
+  margin-top: -100px;
+}
+
+#clickhere{
+  font-size: 2em;
+}
+
+#exampleModal{
+  margin-top: 500px;
+  margin-left:240px;
+  font-size: 2em;
+  width: 1200px;
+}
+
+.modal-backdrop{
+  display: none;
+}
+
+footer{
+  width: 1000px;
+  font-size: 23px;
+}
+
+#naviposht{
+  margin-left: 310px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  #myCarousel{
+    width: 1350px;
+  }
+
+  .mainContent{
+    margin-left: 100px;
+  }
+
+  #phonebutton{
+    position: relative;
+    left: 600px;
+    font-size: 2em;
+  }
+
+  .navili{
+    font-size: 2em;
+  }
+
+#eparah1{
+  width: 900px;
+}
+
+#peparah{
+  margin-left: -120px;
+  font-size: 21px;
+}
+
+.edyta{
+  width: 100%;
+}
+
+#edytah1{
+  width: 800px;
+  margin-left: 120px;
+}
+ 
+#clientCarousel{
+  width: 1200px;
+}
+.clientsp{
+  font-size: 25px;
+}
+.clientspics{
+  margin-left: -200px;
+  margin-top: -230px;
+}
+.clientsh2{
+  display: none;
+}
+
+.firstone{
+width: 1400px;
+margin-left: -100px;
+}
+
+.etreta{
+margin-left: 0px;
+padding: 50px;
+}
+
+#etretah1{
+font-size: 7em;
+}
+
+#ptreta{
+font-size: 25px;
+margin-top: -100px;
+}
+
+#clickhere{
+font-size: 2em;
+}
+
+#exampleModal{
+margin-top: 500px;
+margin-left:240px;
+font-size: 2em;
+width: 1500px;
+}
+
+.modal-backdrop{
+display: none;
+}
+
+footer{
+width: 1000px;
+font-size: 23px;
+}
+
+#naviposht{
+margin-left: 310px;
+}
+
+}
